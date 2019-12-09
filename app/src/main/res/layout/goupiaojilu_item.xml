@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@drawable/item"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_134"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_24"
+        >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_margin="@dimen/dp_10"
+        fresco:placeholderImage="@drawable/zhanweitu"
+        fresco:failureImage="@drawable/cuowutu"
+        android:id="@+id/goupiaojilu_item_simple"
+        android:layout_width="@dimen/dp_95"
+        android:layout_height="@dimen/dp_114" />
+<LinearLayout
+   android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/goupiaojilu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/bai"
+        android:text="悲伤逆流成河"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/bai"
+            android:text="订单号"
+            />
+        <TextView
+            android:id="@+id/goupiaojilu_dingdanhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/bai"
+            android:text="订单号"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/bai"
+            android:text="创建时间"
+            />
+        <TextView
+            android:id="@+id/goupiaojilu_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/bai"
+            android:text="创建时间"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goupiaojilu_button"
+        android:textSize="@dimen/dp_12"
+        android:text="立即付款"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/bai"
+        android:layout_marginLeft="@dimen/dp_100"
+        android:background="@drawable/button_shape"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_28" />
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

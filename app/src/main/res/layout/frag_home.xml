@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/shenblue"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_dingweisimp"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:background="@drawable/shouyedingwei"
+            android:layout_marginLeft="@dimen/dp_26"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/beijingeses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/img_ding"
+            android:text="北京"
+            android:textColor="#EEECEC"
+            android:textSize="14sp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/home_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="226dp"
+            android:background="@drawable/icon_shoushuo" />
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/shouye_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_xrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <!--<androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+    <com.stx.xhb.androidx.XBanner
+        android:layout_marginTop="10sp"
+        android:id="@+id/xbanner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></com.stx.xhb.androidx.XBanner>
+  <LinearLayout
+      android:background="@color/blue"
+      android:layout_marginTop="10dp"
+      android:layout_width="360dp"
+      android:layout_height="38dp">
+      <com.facebook.drawee.view.SimpleDraweeView
+          android:id="@+id/img_view1"
+          android:layout_gravity="center"
+          android:background="@drawable/teying"
+          android:layout_width="19dp"
+          android:layout_height="20dp"
+          android:layout_marginLeft="25dp"
+          />
+      <TextView
+          android:textSize="14sp"
+          android:text="正在热映"
+          android:layout_gravity="center"
+          android:layout_marginLeft="10dp"
+          android:textColor="@color/bai"
+          android:layout_toRightOf="@id/img_view1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:textSize="12sp"
+          android:text="更多"
+          android:layout_marginLeft="202dp"
+            android:layout_gravity="center"
+          android:textColor="@color/bai"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rlv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"></androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:background="@color/blue"
+                android:layout_marginTop="10dp"
+                android:layout_width="360dp"
+                android:layout_height="38dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:background="@drawable/shangying"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    />
+                <TextView
+                    android:textSize="14sp"
+                    android:text="即将上映"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/bai"
+                    android:layout_toRightOf="@id/img_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="更多"
+                    android:layout_marginLeft="202dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:background="@color/blue"
+                android:layout_marginTop="10dp"
+                android:layout_width="360dp"
+                android:layout_height="38dp">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_gravity="center"
+                    android:background="@drawable/remen"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    />
+                <TextView
+                    android:textSize="14sp"
+                    android:text="热门电影"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/bai"
+                    android:layout_toRightOf="@id/img_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="12sp"
+                    android:text="更多"
+                    android:layout_marginLeft="202dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>-->
+
+</LinearLayout>

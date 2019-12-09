@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/shenblue"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_ding"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_height="24dp"
+            android:layout_marginLeft="26dp"
+            android:background="@drawable/icon_dingwei" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/img_ding"
+            android:text="北京"
+            android:textColor="#EEECEC"
+            android:textSize="14sp" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/yingyuan_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="226dp"
+            android:background="@drawable/icon_shoushuo" />
+    </LinearLayout>
+<!--    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_weight="1"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:layout_width="360dp"
+        android:layout_height="0dp">
+        <RadioButton
+            style="@style/radioGroup"
+            android:id="@+id/rb1"
+            android:text="@string/yingyuan_tuijian"
+            />
+        <RadioButton
+            style="@style/radioGroup"
+            android:id="@+id/rb2"
+            android:text="@string/yingyuan_fujin"
+            />
+        <RadioButton
+            style="@style/radioGroup"
+            android:id="@+id/rb3"
+            android:text="@string/yingyuan_haiding"
+            />
+    </RadioGroup>-->
+<com.google.android.material.tabs.TabLayout
+    style="@style/MyTabLayoutTextAppearance"
+    android:id="@+id/tab"
+    app:tabTextColor="@color/bai"
+    android:background="@color/blue"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"></com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

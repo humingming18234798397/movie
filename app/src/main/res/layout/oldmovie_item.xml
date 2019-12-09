@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_121">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/old_name"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#fff"
+                android:text="悲伤逆流成河"
+                android:layout_marginLeft="@dimen/dp_118"
+                android:layout_marginTop="@dimen/dp_14"
+                android:singleLine="true"
+                android:layout_width="@dimen/dp_139"
+                android:layout_height="@dimen/dp_20" />
+
+            <TextView
+                android:id="@+id/old_time"
+                android:layout_width="@dimen/dp_139"
+                android:layout_height="@dimen/dp_17"
+                android:textSize="12sp"
+                android:layout_marginLeft="@dimen/dp_118"
+                android:textColor="#fff"
+                android:text="时间"
+                android:layout_marginTop="@dimen/dp_20"
+                />
+            <Button
+                android:id="@+id/old_pingjia"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_20"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#fff"
+                android:text="评价"
+                android:layout_marginLeft="@dimen/dp_118"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/old_img"
+        fresco:placeholderImage="@drawable/zhanweitu"
+        fresco:failureImage="@drawable/cuowutu"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="@dimen/dp_84"
+        android:layout_height="@dimen/dp_101" />
+
+</RelativeLayout>

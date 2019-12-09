@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_width="360dp"
+        android:layout_height="38dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_gravity="center"
+            android:background="@drawable/remen"
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:textSize="14sp"
+            android:text="热门电影"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bai"
+            android:layout_toRightOf="@id/img_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/list3_text"
+            android:textSize="12sp"
+            android:text="更多"
+            android:layout_marginLeft="202dp"
+            android:layout_gravity="center"
+            android:textColor="@color/bai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/list1_sim"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_width="312dp"
+        android:layout_height="@dimen/dp_120" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

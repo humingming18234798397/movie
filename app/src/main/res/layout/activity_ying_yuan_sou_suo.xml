@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/shenblue"
+    android:layout_height="match_parent"
+    tools:context=".activity.YingYuanSouSuo">
+    <LinearLayout
+        android:id="@+id/b"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sousuo_simple"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shapeback"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16" />
+        <EditText
+            android:paddingLeft="@dimen/dp_20"
+            android:textSize="@dimen/dp_12"
+            android:singleLine="true"
+            android:id="@+id/edit_text"
+            android:background="@drawable/edit_shape"
+            android:layout_marginLeft="@dimen/dp_42"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_30" />
+        <Button
+            android:id="@+id/sousuo_button"
+            android:background="@drawable/sousuo_button"
+            android:textSize="@dimen/dp_14"
+            android:text="搜索"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:textColor="@color/bai"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_30" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/b"
+        android:id="@+id/sousuo_xrlv"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+<include layout="@layout/layout_include"
+    android:visibility="gone"
+    />
+
+</RelativeLayout>

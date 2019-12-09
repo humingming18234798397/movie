@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">维度影院</string>
+    <string name="password">请输入密码</string>
+    <string name="email">请输入邮箱</string>
+    <string name="name">请输入名字</string>
+    <string name="yanzhengma">获取验证码</string>
+    <string name="login_button">登录</string>
+    <string name="register_button">注册</string>
+    <string name="yingyuan_tuijian">推荐影院</string>
+    <string name="yingyuan_fujin">附近影院</string>
+    <string name="yingyuan_haiding">海淀区</string>
+</resources>

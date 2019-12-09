@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="@color/shenblue"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="164dp"
+        android:text="我的"
+        android:textColor="@color/bai"
+        />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/xitongxiaoxi"
+        android:layout_marginLeft="117dp"
+        android:background="@drawable/xinxi"
+        android:layout_width="22dp"
+        android:layout_marginTop="1dp"
+        android:layout_height="17dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/my_buju"
+        android:layout_width="312dp"
+        android:layout_height="90dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/my_touxiang"
+            fresco:roundAsCircle="true"
+            android:background="@drawable/wuguanzhu"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp" />
+        <TextView
+        android:id="@+id/my_name"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="电影故事"
+        android:layout_marginLeft="20dp"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="22dp" />
+        <TextView
+            android:id="@+id/my_text"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:text=">"
+            android:layout_marginLeft="136dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/my_moviepiao"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue"
+            android:orientation="horizontal"
+            android:layout_width="312dp"
+            android:layout_height="40dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/wodedianyingpiao"
+                android:layout_width="24dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/my_piao"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="电影票"
+                android:textColor="@color/bai"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/my_text1"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:text=">"
+                android:textColor="@color/bai"
+                android:layout_marginLeft="197dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:background="@color/blue"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="24dp"
+        android:layout_width="312dp"
+        android:layout_height="235dp">
+      <LinearLayout
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="0dp">
+          <LinearLayout
+              android:id="@+id/my_guanzhu"
+          android:layout_width="0dp"
+              android:layout_weight="1"
+          android:orientation="vertical"
+              android:layout_gravity="center"
+          android:layout_height="wrap_content">
+          <com.facebook.drawee.view.SimpleDraweeView
+              android:background="@drawable/group_2"
+              android:layout_width="24dp"
+              android:layout_gravity="center"
+              android:layout_height="24dp" />
+          <TextView
+              android:textColor="@color/bai"
+              android:textSize="12sp"
+              android:text="我的关注"
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+          <LinearLayout
+              android:id="@+id/wodeyuyue"
+              android:layout_width="0dp"
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content">
+              <com.facebook.drawee.view.SimpleDraweeView
+                  android:background="@drawable/group_4"
+                  android:layout_width="24dp"
+                  android:layout_gravity="center"
+                  android:layout_height="24dp" />
+              <TextView
+                  android:textColor="@color/bai"
+                  android:textSize="12sp"
+                  android:text="我的预约"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+          <LinearLayout
+              android:id="@+id/goupiaojilu"
+              android:layout_width="0dp"
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center"
+              android:layout_height="wrap_content">
+              <com.facebook.drawee.view.SimpleDraweeView
+                  android:background="@drawable/chongzhijilu"
+                  android:layout_width="24dp"
+                 android:layout_gravity="center"
+                  android:layout_height="24dp" />
+              <TextView
+                  android:textColor="@color/bai"
+                  android:textSize="12sp"
+                  android:text="购票记录"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+          </LinearLayout>
+      </LinearLayout>
+        <LinearLayout
+            android:id="@+id/my_oldmovie"
+           android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_gravity="center"
+                    android:background="@drawable/duihao"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:textColor="@color/bai"
+                    android:textSize="12sp"
+                    android:text="看过的电影"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/my_pinglun"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:background="@drawable/group_3"
+                    android:layout_width="24dp"
+                    android:layout_gravity="center"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:textColor="@color/bai"
+                    android:textSize="12sp"
+                    android:text="我的评论"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/my_yijian"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:background="@drawable/yijianfankui_01"
+                    android:layout_width="24dp"
+                    android:layout_gravity="center"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:textColor="@color/bai"
+                    android:textSize="12sp"
+                    android:text="意见反馈"
+                   android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:id="@+id/my_shezhi"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:background="@drawable/invalid_name"
+                    android:layout_width="24dp"
+                    android:layout_gravity="center"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:textColor="@color/bai"
+                    android:textSize="12sp"
+                    android:text="设置"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

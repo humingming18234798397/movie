@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/shenblue"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.FanKuiActivity">
+    <LinearLayout
+        android:id="@+id/llone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/feedback_fanhui"
+                android:background="@drawable/back"
+                android:layout_width="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_28"
+                android:layout_height="@dimen/dp_16" />
+            <TextView
+                android:text="意见反馈"
+                android:textColor="#d8d8d8"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginLeft="@dimen/dp_104"
+                android:layout_marginTop="@dimen/dp_37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/feedback_et_message"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:background="#1c2243"
+            android:textColorHint="#d8d8d8"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_30"
+            android:hint="写下您对产品的感受吧！工作人员将会在第一时间评估处理。"
+            android:layout_width="@dimen/dp_312"
+            android:layout_height="@dimen/dp_77" />
+        <Button
+            android:text="提交"
+            android:id="@+id/feedback_btn_tijiao"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginLeft="@dimen/dp_291"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_12"
+            android:background="#e8185e"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_20" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relattwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/rela1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_37"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_21">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/yijiantwo_fanhui"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_22"
+                android:layout_toRightOf="@id/yijiantwo_fanhui"
+                android:gravity="center"
+                android:text="意见反馈"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_vis"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_80"
+            android:layout_below="@id/rela1"
+            android:background="@drawable/fankuisuccess"
+            />
+        <TextView
+            android:id="@+id/tv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#deffffff"
+            android:text="提交成功"
+            android:layout_below="@id/img_vis"
+            android:layout_marginTop="@dimen/dp_27"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#deffffff"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center_horizontal"
+            android:text="感谢您对维度影院的关注与支持，我们会认真处理您问题，尽快修复和完善相关功能。"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_below="@+id/tv_success"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

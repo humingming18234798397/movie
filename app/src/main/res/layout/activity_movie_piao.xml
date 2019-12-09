@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/shenblue"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MoviePiaoActivity">
+    <LinearLayout
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/goupiaojilu_fanhui"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:background="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/dp_104"
+            android:text="我的电影票"
+            android:textColor="@color/bai"
+            />
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@id/aaa"
+    android:id="@+id/moviepiao_rlv"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+  <RelativeLayout
+      android:layout_below="@id/aaa"
+      android:visibility="gone"
+      android:id="@+id/moviewpiao_relat"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:layout_marginTop="@dimen/dp_120"
+          android:layout_centerHorizontal="true"
+          android:textColor="@color/bai"
+          android:text="扫码取票"
+          />
+      
+      <com.facebook.drawee.view.SimpleDraweeView
+          android:id="@+id/movie_simp"
+          android:layout_marginTop="@dimen/dp_179"
+          fresco:placeholderImage="@drawable/zhanweitu"
+          fresco:failureImage="@drawable/cuowutu"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/erweima"
+          android:layout_width="@dimen/dp_174"
+          android:layout_height="@dimen/dp_174" />
+        <Button
+            android:id="@+id/movie_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:text="取消"
+            android:textColor="@color/bai"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/movie_simp"
+            android:layout_marginTop="@dimen/dp_67"
+            android:background="@drawable/button_shape"
+            />
+  </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_below="@id/aaa"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img"
+            android:background="@drawable/xitongwuxiaoxi"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dp_164"
+            android:layout_height="@dimen/dp_164" />
+        <TextView
+            android:layout_below="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/bai"
+            android:text="暂无电影票"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

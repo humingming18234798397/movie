@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/image"
+    android:background="@drawable/beijing"
+    android:layout_width="match_parent"
+    android:layout_height="290dp" />
+<EditText
+    android:hint="@string/email"
+    android:id="@+id/edit_email"
+    style="@style/edit"
+    />
+    <EditText
+        style="@style/edit"
+        android:hint="@string/password"
+        android:password="true"
+        android:id="@+id/password"
+         />
+    <TextView
+        android:id="@+id/text_view"
+        android:textSize="10sp"
+        android:textColor="@color/bai"
+        android:text="暂无账号,立即注册"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="252dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/button"
+        android:id="@+id/but_login"
+        android:text="@string/login_button"
+        android:background="@drawable/button_shape"
+         />
+    <TextView
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/bai"
+        android:text="———— 或 ————"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<Button
+    android:id="@+id/weixin_button"
+    style="@style/button"
+    android:paddingTop="@dimen/dp_10"
+    android:background="@drawable/weixin_shape"
+    android:drawableTop="@drawable/weixin_copy_3"
+         />
+</LinearLayout>

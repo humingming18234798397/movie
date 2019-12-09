@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="410dp"
+        android:orientation="vertical"
+        android:layout_width="@dimen/dp_360"
+        android:background="@color/bai"
+        android:layout_height="@dimen/dp_138">
+
+    <TextView
+        android:id="@+id/ttt"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_14"
+        android:text="请选择支付方式"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_below="@id/ttt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:background="@drawable/zhifuweixin"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24" />
+        <TextView
+            android:id="@+id/weixinzhifu"
+            android:text="微信支付"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@id/lin"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:background="@drawable/zhifubao"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24" />
+        <TextView
+            android:id="@+id/zhifubaozhifu"
+            android:text="支付宝支付"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
